@@ -114,11 +114,11 @@ public class User {
      * Java main method where the application is executed
      *The control flows use the static attributes to perform the queries and display the information.
      *
-     * @param args It refers to the method that optimizes the code to exit the control flows.
+     * @param args arguments of the main.java class
      *
      * @author Daniel, Agudelo - danielagudelo103@gmail.com
      *
-     * @since 1.1.1
+     * @since 1.0.0
      */
     public static void main(String[] args) {
         System.out.println("Welcome, would you like to see information about any celestial object in the solar system?");
