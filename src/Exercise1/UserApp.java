@@ -15,7 +15,7 @@ import java.util.Scanner;
  *
  * @since 1.0.0
  */
-public class User {
+public class UserApp {
 
     /**
      * attribute that refers to the instance of the Exit class that serves as functionality.
