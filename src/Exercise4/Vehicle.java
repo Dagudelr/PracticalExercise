@@ -1,6 +1,7 @@
 package Exercise4;
 
 import java.util.Date;
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -13,17 +14,69 @@ import java.util.UUID;
  * @since 1.0.0
  */
 public class Vehicle {
-
-    private final UUID id;
-    private final String brand;
-    private final String model;
-    private final Date modelYear;
-    private final typeVehicle type;
-    private final colors color;
-    private final Integer numberWheels;
-    private final Integer NumberPassengers;
-    private final Integer price;
-    private final meansTransport means;
+    /**
+     *protected attribute that can be used from classes that extend the vehicle class and refers to the vehicle id.
+     *
+     * @since 1.0.0
+     */
+    protected final UUID id;
+    /**
+     *protected attribute that can be used from classes that extend the vehicle class and refers to the vehicle brand.
+     *
+     * @since 1.0.0
+     */
+    protected final String brand;
+    /**
+     * protected attribute that can be used from classes that extend the vehicle class and refers to the vehicle model.
+     *
+     * @since 1.0.0
+     */
+    protected final String model;
+    /**
+     * protected attribute that can be used from classes that extend the vehicle class and
+     * refers to the vehicle modelYear.
+     *
+     * @since 1.0.0
+     */
+    protected final Date modelYear;
+    /**
+     * protected attribute that can be used from classes that extend the vehicle class and refers to the vehicle type.
+     *
+     * @since 1.0.0
+     */
+    protected final typeVehicle type;
+    /**
+     * protected attribute that can be used from classes that extend the vehicle class and refers to the vehicle color.
+     *
+     * @since 1.0.0
+     */
+    protected final colors color;
+    /**
+     * protected attribute that can be used from classes that extend the vehicle class and
+     * refers to the vehicle numberWheels.
+     *
+     * @since 1.0.0
+     */
+    protected final Integer numberWheels;
+    /**
+     * protected attribute that can be used from classes that extend the vehicle class and
+     * refers to the vehicle NumberPassengers.
+     *
+     * @since 1.0.0
+     */
+    protected final Integer NumberPassengers;
+    /**
+     * protected attribute that can be used from classes that extend the vehicle class and refers to the vehicle price.
+     *
+     * @since 1.0.0
+     */
+    protected final Integer price;
+    /**
+     * protected attribute that can be used from classes that extend the vehicle class and refers to the vehicle meansTransport.
+     *
+     * @since 1.0.0
+     */
+    protected final meansTransport means;
 
     /**
      * constructor method that initializes the values of the class when it is instantiated.
@@ -45,15 +98,15 @@ public class Vehicle {
                    colors color, Integer numberWheels, Integer numberPassengers,
                    Integer price, meansTransport means) {
         this.id = UUID.randomUUID();
-        this.brand = brand;
-        this.model = model;
-        this.modelYear = modelYear;
-        this.type = type;
-        this.color = color;
-        this.numberWheels = numberWheels;
-        this.NumberPassengers = numberPassengers;
-        this.price = price;
-        this.means = means;
+        this.brand = Objects.requireNonNull(brand);
+        this.model = Objects.requireNonNull(model);
+        this.modelYear = Objects.requireNonNull(modelYear);
+        this.type = Objects.requireNonNull(type);
+        this.color = Objects.requireNonNull(color);
+        this.numberWheels = Objects.requireNonNull(numberWheels);
+        this.NumberPassengers = Objects.requireNonNull(numberPassengers);
+        this.price = Objects.requireNonNull(price);
+        this.means = Objects.requireNonNull(means);
     }
 
     /**

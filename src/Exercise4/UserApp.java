@@ -16,6 +16,71 @@ import java.util.Scanner;
  * @since 1.0.0
  */
 public class UserApp {
+
+    /**
+     * static attribute that is assigned the value of the vehicle brand and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static String brand;
+    /**
+     * static attribute that is assigned the value of the vehicle model and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static String model;
+    /**
+     * static attribute that is assigned the value of the vehicle modelYear and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static Date modelYear;
+    /**
+     * static attribute that is assigned the value of the vehicle numberWheels and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static Integer numberWheels;
+    /**
+     * static attribute that is assigned the value of the vehicle numberPassengers and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static Integer numberPassengers;
+    /**
+     * static attribute that is assigned the value of the vehicle price and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static Integer price;
+    /**
+     * static attribute that is assigned the value of the vehicle type and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static Vehicle.typeVehicle type;
+    /**
+     * static attribute that is assigned the value of the vehicle color and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static Vehicle.colors color;
+    /**
+     * static attribute that is assigned the value of the vehicle means and
+     * is used when the vehicle class is instantiated.
+     *
+     * @since 1.0.0
+     */
+    static Vehicle.meansTransport means;
+
     /**
      * Java main method where the application is executed
      * The control flows use the attributes to perform the queries and display the information.
@@ -26,16 +91,6 @@ public class UserApp {
      * @since 1.0.0
      */
     public static void main(String[] args) {
-
-        String brand;
-        String model;
-        Date modelYear = null;
-        int numberWheels = 0;
-        int numberPassengers = 0;
-        int price = 0;
-        Vehicle.typeVehicle type = null;
-        Vehicle.colors color = null;
-        Vehicle.meansTransport means = null;
 
         int option = 1;
         boolean exitOption;
